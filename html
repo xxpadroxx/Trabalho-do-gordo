@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tomato-background">
+        <div class="flashcard" onclick="toggleAnswer(this)">
+            <div class="question">
+                <p>O tomate é uma fruta ou um legume?</p>
+            </div>
+            <div class="answer">
+                <p>O tomate é uma fruta!</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(flashcard) {
+            flashcard.classList.toggle('flipped');
+        }
+    </script>
+</body>
+</html>
